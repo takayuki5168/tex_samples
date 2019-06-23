@@ -1,0 +1,19 @@
+\documentclass{jsarticle}
+
+%% addition
+\usepackage{bm}
+\usepackage{amsmath}
+
+\newcommand{\figref}[1]{\figurename\ref{fig:#1}}
+\newcommand{\tabref}[1]{\tablename\ref{tab:#1}}
+
+\begin{document}
+\title{\TeX, \LaTeX, \LaTeXe サンプル集}
+\author{室岡貴之}
+\maketitle
+
+\input{src/character}   %% 文字
+\section{画像}
+\section{箇条書き}
+\input{src/mathematics}   %% 数式
+\end{document}

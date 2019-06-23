@@ -1,0 +1,80 @@
+\section{数式}
+\subsection{ベクトル}
+$\vec{a}$，$\overrightarrow{a}$，$\overrightarrow{AB}$，$\bm{a}$，$\bm{\hat{a}}$
+
+\[
+\bm{a}^T，{}^t\!\bm{a}
+\]
+
+\[
+\vec{a} \cdot \vec{b}
+\]
+
+\[
+\bm{A} \times \bm{B}
+\]
+
+\[
+\bm{A} = \left(
+\begin{array}{c}
+  a_1 \\
+  a_2 \\
+  \vdots \\
+  a_n
+\end{array}
+\right)
+\]
+
+
+\subsection{特殊記号}
+$\infty$
+
+\subsection{演算子}
+$\sin(x)$，$\cos x$，$\tan x$，
+
+\subsection{数式一覧}
+\[
+\frac{\pi}{2} =
+\left( \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx \right)^2 =
+\sum_{k=0}^{\infty} \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} =
+\prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1}
+\]
+
+\begin{eqnarray}
+  2x_1 + x_2 = 5 \\
+  2x_2 = 2
+\end{eqnarray}
+
+\begin{eqnarray*}
+  2x_1 + x_2 & = & 5 \\
+  2x_2 & = & 2
+\end{eqnarray*}
+
+\begin{eqnarray}  
+  \left\{ \begin{array}{l}
+    \displaystyle \sum_{c \in shovel\_contacts} (\bm{f}_{c} + m_{shovel} \bm{g}) = 0 \\
+    \displaystyle \sum_{c \in shovel\_contacts} (\bm{p}_{c} \times \bm{f}_{c} + \bm{n}_{c}) + \bm{p}_{shovel} \times m_{shovel} \bm{g} = 0
+  \end{array} \right.
+\end{eqnarray}
+
+\begin{align}
+  & \underset{\bm{w}_{limbs}} {\text{minimize}} && \bm{w}_{limbs}^T \bm{w}_{limbs}^T\\
+  & \text{subject to} && \bm{w}_{mg} = G_{robot} \bm{w}_{limbs} \\
+  & && C_{shovel} \bm{w}_{limbs} \geq \bm{d}_{shovel} \\
+  & && C_{cop} \bm{w}_{limbs} \geq \bm{d}_{cop} \\
+  & && C_{fri} \bm{w}_{limbs} \geq \bm{d}_{fri}
+\end{align}
+
+\begin{align*}
+  & \text{find} && {\bm p_{tool}}，{\bm g_{sub}}, {\bm \theta}\\
+  & \text{s.t.} && {\bm g_{sub}} \in {\bm G1}\\
+  &  && {\bm g_{sub}} \in {\bm G2}\\
+  & && \text{collisionCheck(Robot, Robot)} \text{ is False}\\  
+  & && \text{collisionCheck(Robot, Tool)} \text{ is False}\\
+  & && \text{collisionCheck(Robot, Environment)} \text{ is False}\\
+  & && \text{collisionCheck(Tool, Environment)} \text{ is False}\\  
+  & \text{where} && {\bm G1} \text{ 道具の把持可能な把持位置姿勢の集合}\\
+  & && {\bm G2} \text{ 初期位置姿勢にある道具を} {\bm g_{sub}} \text{で把持した際に，}\\
+  & && \text{ハンドと環境が干渉しない道具の把持位置姿勢の集合}\\    
+  & && \text{collisionCheck(A, B)} \text{ AとBが干渉しているか否か}\\
+\end{align*}
